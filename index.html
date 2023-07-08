@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="XDev portfolio">
+    <meta name="keywords" content="XDev, Portfolio, Developer, Youtuber, HTML, CSS, JS, PHP, CSharp, Unity, Tutorials">
+    <meta name="author" content="XDev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - XDev</title>
+
+    <link rel="icon" href="images/LogoTransparentWhite.png">
+    <link rel="stylesheet" href="Style/style-main.css">
+    <link rel="stylesheet" href="Style/scrollbar.css">
+
+    <script src="Javascript/warn.js"></script>
+    <script src="https://kit.fontawesome.com/1011f48695.js" crossorigin="anonymous"></script>
+    <!--Image CDN-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body>
+    <div class="maincontainer">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#home" class="logo"><img src="images/LogoTransparentBlack.png" alt="XDev"></a>
+                    <div class="menu-icon"><i class="fi fi-br-menu-burger"></i></div>
+            
+                    <ul class="navicons">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav2">
+                    <a href="#home" class="logo"><img src="images/LogoTransparentBlack.png" alt="XDev"></a>
+                    <div class="menu-icon"><i class="fi fi-br-menu-burger"></i></div>
+                </div>
+                <div class="header-text">
+                    <p class="title dark">Hi, My name is XDev</p>
+                    <p class="normaltext dark">Im an indie game developer,  frontend-backend web <br> developer and WPF desktop app developer</p>
+                    <div class="gapsmall"></div>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <p class="title">About me</p>
+                <div class="box">
+                    <p class="normaltext abouttext">Im <strong>XDev</strong>, a 14-year-old developer and <strong>YouTuber</strong>
+                        with a passion for creating. I have expertise in <strong>frontend</strong>
+                        and <strong>backend</strong> development, desktop apps with <strong>Maui</strong> and <strong>WPF</strong>, and <strong>HTML</strong>, <strong>CSS</strong>, 
+                        and <strong>JavaScript</strong>. You can find me on <strong>Twitter</strong> and see my work on my <strong>YouTube</strong> channel.</p>
+
+                    <p class="smalltext grey gapsmall">Im currently learning <strong><a href="https://www.blender.org/">blender</a></strong></p>
+                </div>
+                <div class="gapverybig"></div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <p class="title">Some of my projects</p>
+            <div class="buttons gapsmall">
+                <ul class="Tabbuttons">
+                    <li><button id="Apps" class="tab enabled" onclick="activatetab(event, 'apps')">Apps</button></li>
+                    <li><button id="Games" class="tab" onclick="activatetab(event, 'games')">Games</button></li>
+                    <li><button id="Websites" class="tab" onclick="activatetab(event, 'websites')">Websites</button></li>
+                    <li><button id="Libraries" class="tab" onclick="activatetab(event, 'libs')">Libraries</button></li>
+                    <li><button id="All" class="tab" onclick="activatetab(event, 'all')">All</button></li>
+                </ul>
+            </div>
+            <div class="cards gapsmall">
+                <div id="apps" class="card">
+                    <div class="items" id="items">
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Bitrate calculator pro</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">A very simple bitrate calculator for davinci resolve</p>
+                            </div>
+                            <div class="buttoncardContainer buttongap">
+                                <a href="https://github.com/XDeevv/Bitrate-Calculator-Pro"><button class="button2">Download</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>TaskMgrX</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">A lightweight task manager made with the c# programming language</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://taskmgrx.netlify.app/"><button class="button2">Download</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Fasma</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Fasma is a game launcher I made with bl4ck targeting indie game developers</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <button class="button2">Coming soon</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="games" class="card" style="display: none;">
+                    <div class="items" id="items">
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Flappysquare</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Flappysquare is a simple game i made in 1 day</p>
+                            </div>
+                            <div class="buttoncardContainer buttongap">
+                                <a href="https://flyingsquare.ml/"><button class="button2">Download</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Airborne</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">When you put together Platformers, Rage, Parkour and Action you get Airborne.</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://store.steampowered.com/app/2338070/"><button class="button2">Wishlist</button></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="websites" class="card" style="display: none;">
+                    <div class="items" id="items">
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>ButtonClick</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">ButtonClick is a little javascript game i made and i think the design looks good</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://buttonclick.cf/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>LiveCE</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Idk.</p>
+                            </div>
+                            <div class="buttoncardContainer buttongap2">
+                                <a href="https://livece.netlify.app/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Bitrate calculator</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">A Bitrate calculator for DaVinci Resolve</p>
+                            </div> 
+                            <div class="buttoncardContainer buttongap">
+                                <a href="https://bitratecalculator.netlify.app/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Calculator 56</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Calculator 56 Is The First Website I'Ve Ever Deployed And Created. It Can Add Or Subtract Numbers.</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://calculator56.netlify.app/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="libs" class="card" style="display: none;">
+                    <div class="itemcard">
+                        <div class="cardContainer">
+                            <p class="normaltext"><strong>CSLog</strong></p> 
+                            <div class="gapverysmall"></div>
+                            <p class="smalltext">CSLog is a logging library I made for the C# programming language</p>
+                        </div>
+                        <div class="buttoncardContainer">
+                            <a href="https://github.com/XDeevv/CSLog"><button class="button2">Add</button></a> 
+                        </div>
+                    </div>
+                </div>
+                <div id="all" class="card" style="display: none;">
+                    <div class="items" id="items">
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Bitrate calculator pro</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">A very simple bitrate calculator for davinci resolve</p>
+                            </div>
+                            <div class="buttoncardContainer buttongap">
+                                <a href="https://github.com/XDeevv/Bitrate-Calculator-Pro"><button class="button2">Download</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>TaskMgrX</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">A lightweight task manager made with the c# programming language</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://taskmgrx.netlify.app/"><button class="button2">Download</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Fasma</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Fasma is a game launcher I made with bl4ck targeting indie game developers</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <button class="button2">Coming soon</button> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Flappysquare</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Flappysquare is a simple game i made in 1 day</p>
+                            </div>
+                            <div class="buttoncardContainer buttongap">
+                                <a href="https://flyingsquare.ml/"><button class="button2">Download</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Airborne</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">When you put together Platformers, Rage, Parkour and Action you get Airborne.</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://store.steampowered.com/app/2338070/"><button class="button2">Wishlist</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>ButtonClick</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">ButtonClick is a little javascript game i made and i think the design looks good</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://buttonclick.cf/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>LiveCE</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Idk.</p>
+                            </div>
+                            <div class="buttoncardContainer buttongap2">
+                                <a href="https://livece.netlify.app/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Bitrate calculator</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">A Bitrate calculator for DaVinci Resolve</p>
+                            </div> 
+                            <div class="buttoncardContainer buttongap">
+                                <a href="https://bitratecalculator.netlify.app/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>Calculator 56</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">Calculator 56 Is The First Website I'Ve Ever Deployed And Created. It Can Add Or Subtract Numbers.</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://calculator56.netlify.app/"><button class="button2">Open</button></a> 
+                            </div>
+                        </div>
+                        <div class="itemcard">
+                            <div class="cardContainer">
+                                <p class="normaltext"><strong>CSLog</strong></p> 
+                                <div class="gapverysmall"></div>
+                                <p class="smalltext">CSLog is a logging library I made for the C# programming language</p>
+                            </div>
+                            <div class="buttoncardContainer">
+                                <a href="https://github.com/XDeevv/CSLog"><button class="button2">Add</button></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gapbig"></div>
+    <div class="footer">
+        <h3>&copy; XDev 2022 <span>&nbsp;&nbsp;|&nbsp;&nbsp; <b><a href="https://xdev.uno/twitter"><i class="fa fa-twitter"></i></a> &nbsp;&nbsp;  <a href="https://xdev.uno/yt"><i class="fa fa-youtube"></i></a> &nbsp;&nbsp;  <a href="https://xdev.uno/insta"><i class="fa fa-instagram"></i></a> &nbsp;&nbsp;  <a href="https://xdev.uno/github"><i class="fa fa-github"></i></i></a></b></h3></span></h3>
+    </div>
+
+    <script src="Javascript/navbar.js"></script>
+</body> 
+</html>
